@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TheWorld</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/site.css" />
+	<!--Now we have created a css file and linked it to the html file-->
+</head>
+
+
+<body>
+
+	<div>
+		<div class="header">
+			<h2>The Sufi geeks</h2>
+			<p> This is my community website</p>
+		</div>
+		<div id="sidebar">
+			<div>
+				<!--lets give it a class so we can style it-->
+				<img src="img/Mawlana.jpg" id="Mawlana" />
+				<span id="username">The text I will replace goes here</span>
+			</div>
+			<div>
+				<ul class="menu">
+					<li class="active"><a href="#">Home</a> </li>
+					<li><a href="#">About me </a></li>
+					<li><a href="#">Contact me</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div id="mainform">
+			<div>
+				<button id="toggle">Toggle menu</button>
+			</div>
+			<!--the main form div -->
+			<form>
+				<div>
+
+					<label>Name</label>
+					<input/>
+				</div>
+				<div>
+					<label>Email</label>
+					<input/>
+				</div>
+				<div>
+					<!--to specify this input and make it unique we will name it with an id-->
+					<input type="submit" value="submit" id="submitbutton" />
+				</div>
+			</form>
+			<div id="footer">
+				&copy; The world ltd
+			</div>
+
+		</div>
+
+	</div>
+
+</body>
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"">-->
+
+<script type="text/javascript" src="js/jquery.js">
+
+</script>
+<script type="text/javascript" src="js/site.js">
+
+</script>
+<!--now I realize order is important, remeber html is rendered by an interpreter-->
+
+
+</html>

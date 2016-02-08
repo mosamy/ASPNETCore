@@ -1,0 +1,110 @@
+/*Notice in css the comments are done this way*/
+/*We will start with a selector*/
+
+/*this applies the style to all labels in the html*/
+
+/*notice I have now switched to sublime text just for the heck of it*/
+/* the idea here is to create a css class that applies to the sidebar element like this
+This will make left = -250px, so the sidebar should dissappear
+*/
+#sidebar.hide-sidebar
+{
+	left: -250px; /*I have already written the code which should be simple enough*/
+}
+
+#mainform.hide-sidebar{
+	margin-left: 0px;
+}
+/***/
+
+#footer {
+    background-color: #006400;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#mainform {
+    margin-left: 250px;
+    background-color: limegreen; /*note this is the color as styled in the css*/
+	height: 100%;
+}
+
+#Mawlana {
+	width: 250px;
+	border: 0 solid #006400;
+    border-bottom-color: #006400;
+    padding: 0;
+	margin: 0;
+}
+#sidebar{
+	height: 100%;
+	position: fixed;
+	left: 0;
+	width: 250px;/*notice originally the left is 250, so -250 px should cancel it out*/
+	border: 3px solid #006400;
+	padding: 0;
+	
+}
+
+.menu{
+	left: 0;
+}
+label
+{
+	font-family: serif;
+	font-style: oblique;
+	color: green;
+	display: block;
+	
+}
+
+.header{
+	color: green;
+	font-style: italic;
+	font-family: fantasy;
+	position: center;
+	text-align: center;
+	background-color: antiquewhite;
+	
+	}
+
+/*now lets pick all inputs and adjust their properties*/
+/*only works when I remove type, don't know why*/
+input
+{
+	font-style: italic;
+	color : blue;
+	width :150px;
+}
+
+#submitbutton
+{
+	color : yellow;
+}
+
+.image{
+	width: 100px;
+}
+
+.menu li{
+	list-style-type: none;
+}
+
+.menu li.active{
+	font-weight: bolder;
+	font-style: oblique;
+	font-size: 20px;
+	
+}
+/*
+All it takes is to set the div direction to RTL, 
+of course HTML5 alone does not support full internationalization
+But I use a variable in my cshtml or in the jsp files in Java nd just change it.
+This technique works great in html templates on all frameworks
+*/
+div{
+	direction: ltr;
+}
+
+
