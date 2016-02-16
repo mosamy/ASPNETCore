@@ -23,10 +23,7 @@ namespace TheWorld
         public void Configure(IApplicationBuilder app)
         {
           
-            //this line must come first, ORDER is important
-            //app.UseDefaultFiles(); 
-            //if this line was first the static page would not be served automatically
-            
+            //order matters here
             app.UseStaticFiles();
               // we are defining a chain of middleware here that will be called back.            app.UseStaticFiles();f middleware here that will be called back.
            /* app.UseMvc(routes =>  
