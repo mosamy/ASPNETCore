@@ -15,18 +15,38 @@ namespace TheWorld
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvcCore();
+            //services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
-            // we are defining a chain of middleware here that will be called back.
-            
+          
             //this line must come first, ORDER is important
-            app.UseDefaultFiles(); 
+            //app.UseDefaultFiles(); 
             //if this line was first the static page would not be served automatically
+            
             app.UseStaticFiles();
-
+              // we are defining a chain of middleware here that will be called back.            app.UseStaticFiles();f middleware here that will be called back.
+           /* app.UseMvc(routes =>  
+                {
+                     routes.MapRoute(
+                     name: "default",
+                     template: "{controller}/{action}/{id?}",
+                     defaults: new {controller = "App" , action = "Index"}
+                     );
+                }); */
+               
+               app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=App}/{action=Index}/{id?}");
+            });
+                
+                
+                
 // 
 //             app.Run(async (context) =>
 //             {
