@@ -27,6 +27,7 @@ namespace TheWorld
             //if this line was first the static page would not be served automatically
             app.UseStaticFiles();
 
+
 // 
 //             app.Run(async (context) =>
 //             {
