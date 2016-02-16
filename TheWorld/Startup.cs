@@ -25,15 +25,7 @@ namespace TheWorld
           
             //order matters here
             app.UseStaticFiles();
-              // we are defining a chain of middleware here that will be called back.            app.UseStaticFiles();f middleware here that will be called back.
-           /* app.UseMvc(routes =>  
-                {
-                     routes.MapRoute(
-                     name: "default",
-                     template: "{controller}/{action}/{id?}",
-                     defaults: new {controller = "App" , action = "Index"}
-                     );
-                }); */
+        
                
                app.UseMvc(routes =>
             {
@@ -43,14 +35,7 @@ namespace TheWorld
             });
                 
                 
-                
-// 
-//             app.Run(async (context) =>
-//             {
-//                 var html = @"<html><body><h1>The World</h1></body> </html>";
-//                 string s =context.Request.Path;
-//                 await context.Response.WriteAsync(html);
-//             });
+              
         }
 
         // Entry point for the application.
